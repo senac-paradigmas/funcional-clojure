@@ -31,4 +31,26 @@
   ; as variávels são imutáveis
   (def a (+ a 1)) ; mas se pode redefinir os valores
   (println (str a " é o novo código de entrada"))
+
+  ; definição de Listas
+  ; conjunto elementos ordenados => Usado para codigo ()
+  (println "\n---- Listas ----")
+  ; '(1 2 3)
+  (println (list 1 3 4))
+
+  ; definição de Vetores
+  ; conjunto elementos ordenados => Usado para dados []
+  ; otimizados para acesso randômico
+  (println "\n---- Vetores ----")
+  (def vetor [1 3 4])
+  (println vetor)
+  (println (first [1 3 4]))
+  (println (last [1 3 4]))
+  (println (nth [1 3 4] 1))
+
+  ; definição de Maps
+  ; conjunto de chave-valor = {}
+  (println "\n---- Maps ----")
+  (def pessoa {:nome "maria", :idade 28} )
+  (println (pessoa :nome))
 )
